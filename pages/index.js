@@ -23,7 +23,7 @@ export default function Home() {
   const [status, setStatus] = useState("Available");
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/status")
+    fetch("https://atulstatusserver.vercel.app/api/status")
       .then(res => res.json())
       .then(data => {
         setStatus(data?.currentStatus || "Available");
