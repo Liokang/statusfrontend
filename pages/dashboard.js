@@ -24,7 +24,7 @@ export default function Dashboard() {
   const updateStatus = async () => {
     const token = localStorage.getItem("token");
 
-    const res = await fetch("http://localhost:5000/api/status", {
+    const res = await fetch("https://atulstatusserver.vercel.app/api/status", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
